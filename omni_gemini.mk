@@ -32,3 +32,7 @@ PRODUCT_NAME := omni_gemini
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 5
 PRODUCT_MANUFACTURER := Xiaomi
+
+# 继承必要的配置
+$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, build/target/product/embedded.mk)
