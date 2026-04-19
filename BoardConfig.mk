@@ -86,3 +86,11 @@ TW_NO_USB_STORAGE := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi
 TW_USE_TOOLBOX := true
+
+# 设置 Android 版本
+TARGET_USES_MKE2FS := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_SUPPORTS_32_BIT_APPS := true
+
+# 关闭动态分区，使用传统的 recovery 分区
+BOARD_USES_RECOVERY_AS_BOOT := true
